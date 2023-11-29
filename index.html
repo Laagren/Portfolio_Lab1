@@ -8,36 +8,76 @@
     <body>
         <header class="banner">
             <a href="index.html" class="logo">Simon Ågren</a>
-            <nav class="navigationBar">
-                <a href="about.html" class="navbarItem">About me</a>
-                <a href="work.html" class="navbarItem">Previous work</a>
-                <a href="contact.html" class="navbarItem">contact</a>
+            <nav class="navigationBar"> 
+                <div class="navbarItem" id="aboutDropDown">About me
+                    <ul class="testDrop">
+                        <li><a href="#About">About Me</a></li>
+                        <li><a href="#Hobbies">Hobbies</a></li>
+                        <li><a href="#Academic">Academic Interests</a></li>
+                        <li><a href="#Future">Future Goals</a></li>
+                    </ul>
+                </div>
+                <a href="work.html" class="navbarItem" id="hoverable">Previous work</a>
+                <a href="contact.html" class="navbarItem" id="hoverable">Contact</a>
             </nav>
         </header>
 
         <section class="main">
             <div class="sidebar"></div>
+
             <div class="portraitContainer">
-                <h1><em>Game development stundent</em></h1>
+                <h1><em>Game Development Student</em></h1>
                 <div class="portrait"></div>
+                
+
             </div>
+
             <div class="mainText">
-                <h1><strong>Hello!</strong></h1>
-                <p>This is me...</p>
+                <h1 id="About"><strong>About Me</strong></h1>
+                <p>My name is Simon Ågren and I am a 27 year old student from Umeå, Sweden. I am third year student at the game development bachelor programme at Malmö University</p>
+                
+                <p>Before moving to Malmö to study in 2021, I worked as a plumber/HVAC technician in Umeå for about 6 years.</p>
+
+                <h2 id="Hobbies">Hobbies</h2>
+                <ul>
+                    <li><b>Golf:</b> Started playing golf in 2021 and it's been my biggest hobby ever since.</li>
+                    <li><b>Games:</b> Been playing games since I first started playing Battlefield 1942 in 2002.</li>
+                    <li>
+                        <b>Other hobbies i've had over the years:</b>
+                        <ul>
+                            <li><b>Badminton</b></li>
+                            <li><b>Football</b></li>
+                            <li><b>Hockey</b></li>
+                            <li><b>Floorball</b></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="Academic">Academic Interests</h2>
+                <p>Since gaming has been a big part of my life I have always had an interest in computers and tech, which finally led me onto programming.</p>
+                <p>Over the course of my time at the game dev programme we have programmed alot in C# which I enjoy very much. However, my favourite subject is computer graphics, which we had a course in last year. It was really interesting to learn how games are rendered and how different graphical components work behind the scenes in games and in game engines.</p>
+
+
+                <h2 id="Future">Future Goals</h2>
+                <p>Since I will be graduating in June 2024, my main goal is to get a job which involves some C# or C++ programming, hopefully as a game programmer.</p>
+                <p>I am also looking forward to further develop my skills as a programmer and keep learning new stuff in this field.</p>
+
+                <div class="form">
+                    <form action="mailto:"></form>
+                    <input type="text" id="fname" value="First Name..">
+                    <input type="text" id="lname" value="Last Name..">
+                    <input type="text" id="email" value="Email..">
+                    <textarea name="" id="textarea" cols="30" rows="10">
+                        
+                    </textarea>
+                </div>
             </div>
+
+
+
             <div class="sidebar"></div>
         </section>
-      
-            <!--
-            <ul>
-                <li>
-                    <img src="Photo.jpg" alt="A photo of Simon" id="Portrait">
-                </li>
-                <li>
-                    <h1>Hello!</h1>
-                    <p>This is me..</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi corporis aperiam quaerat rerum tenetur nostrum deleniti, id unde consectetur nemo iure quae repudiandae hic, culpa ipsam illo. Veniam, velit.</p>
-                </li>-->
+
         <footer class="footer">
             <ul class="footerList">
                 <li>
